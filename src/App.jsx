@@ -1,3 +1,4 @@
+import About from "./componenets/About";
 import Header from "./componenets/Header";
 import Hero from "./componenets/Hero";
 import Portfolio from "./componenets/Portfolio";
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <main className="bg-stone-900 h-full">
         <Hero />
+        <About />
         <Portfolio />
       </main>
     </>
