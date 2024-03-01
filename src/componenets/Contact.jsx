@@ -4,7 +4,7 @@ import pinImg from "../assets/icons/pin.png";
 
 const Contact = () => {
   return (
-    <section className="bg-stone-800 py-20" id="contact">
+    <section className="bg-stone-800 py-48" id="contact">
       <h1 className="text-5xl text-stone-50 text-center mb-12">Contact Me</h1>
       <div className="flex flex-col items-center gap-8 justify-center">
         <a href="mailto:terence.arseneault@hotmail.com">
