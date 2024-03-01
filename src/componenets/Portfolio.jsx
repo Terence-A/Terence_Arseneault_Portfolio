@@ -16,7 +16,7 @@ const Portfolio = () => {
   return (
     <section id="portfolio" className="pt-24 px-20">
       <h1 className="text-stone-50 text-5xl  font-bold mb-12">Portfolio</h1>
-      <div className="">
+      <div className="pb-20">
         <div className=" p-8 flex justify-around">
           <div className="rounded-md ">
             <img
