@@ -41,7 +41,3 @@ I'm always open to collaboration, discussions, and inquiries. Let's connect and 
 - **Location:** Saint John, New Brunswick, Canada
 
 Thank you for visiting my GitHub repository. Feel free to explore my projects and get in touch!
-
----
-
-This version includes all the information you provided in a structured and visually appealing manner. Feel free to make any further adjustments or additions as needed!
