@@ -35,9 +35,9 @@ Thanks for being part of this exciting journey!
 I'm always open to collaboration, discussions, and inquiries. Let's connect and explore the possibilities:
 
 - **Email:** [terence.arseneault@hotmail.com](mailto:terence.arseneault@hotmail.com)
-- **GitHub:** [View My GitHub](https://github.com/yourusername)
-- **LinkedIn:** [View My LinkedIn](https://www.linkedin.com/in/yourlinkedin)
-- **Deployed App:** [View My Portfolio](https://www.yourportfolio.com)
+- **GitHub:** [View My GitHub](https://github.com/Terence-A)
+- **LinkedIn:** [View My LinkedIn](https://www.linkedin.com/in/terence-arseneault-90489b265/)
+- **Deployed App:** [View My Portfolio](https://terencearseneaultportfolio.netlify.app)
 - **Location:** Saint John, New Brunswick, Canada
 
 Thank you for visiting my GitHub repository. Feel free to explore my projects and get in touch!
