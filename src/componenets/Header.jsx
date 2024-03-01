@@ -11,15 +11,17 @@ const Header = () => {
         </a>
         <div>
           <ul className="flex space-x-12 text-xl uppercase">
-            <li className="text-stone-50 hover:text-stone-200 cursor-pointer">
-              Portfolio
-            </li>
-            <li className="text-stone-50 hover:text-stone-200 cursor-pointer">
-              About
-            </li>
-            <li className="text-stone-50 hover:text-stone-200 cursor-pointer">
-              Resume
-            </li>
+            <a href="#about">
+              <li className="text-stone-50 hover:text-stone-200 cursor-pointer">
+                About
+              </li>
+            </a>
+            <a href="#portfolio">
+              <li className="text-stone-50 hover:text-stone-200 cursor-pointer">
+                Portfolio
+              </li>
+            </a>
+
             <li className="text-stone-50 hover:text-stone-200 cursor-pointer">
               Contact
             </li>

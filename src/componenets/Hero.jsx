@@ -29,13 +29,15 @@ const Hero = () => {
           <button className="bg-amber-700 text-stone-50 text-2xl rounded-full w-48 py-4 hover:bg-amber-800 hover:font-bold">
             Contact Me
           </button>
-          <button className="border border-amber-700 rounded-full w-48 py-4 text-2xl text-amber-700 hover:text-stone-50 hover:bg-amber-800 hover:font-bold ">
-            Portfolio
-          </button>
+          <a href="/#portfolio">
+            <button className="border border-amber-700 rounded-full w-48 py-4 text-2xl text-amber-700 hover:text-stone-50 hover:bg-amber-800 hover:font-bold ">
+              Portfolio
+            </button>
+          </a>
         </div>
       </div>
       <img
-        className="size-[600px]  rounded-3xl "
+        className="size-[650px]  rounded-sm "
         src={photoImg}
         alt="photo image"
       />
