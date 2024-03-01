@@ -2,9 +2,9 @@ import skillsData from "../skillsData";
 
 const About = () => {
   return (
-    <section className="px-20 flex flex-col bg-stone-800 " id="about">
+    <section className="px-20 py-20 flex flex-col bg-stone-800 " id="about">
       <h1 className="text-stone-50 text-5xl my-12 font-bold ">About</h1>
-      <div className="px-20">
+      <div className="px-36">
         <p className="text-stone-200 text-xl mb-4  tracking-wider">
           I am a dedicated coding enthusiast with a transformative journey from
           a captivating hobby to a thriving career. My educational path led me
