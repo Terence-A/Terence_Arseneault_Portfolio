@@ -1,9 +1,12 @@
 import atlanticImg from "./assets/atlanticGlamping.jpeg";
 import factVImg from "./assets/factv.png";
+import dinnerImg from "./assets/whatsForDinner.png";
+import weatherImg from "./assets/weatherDashboard.png";
+import workImg from "./assets/workDayScheduler.png";
 
 const portfolioData = [
   {
-    id: 1,
+    id: 0,
     title: "Atlantic Glamping",
     image: atlanticImg,
     description:
@@ -25,9 +28,10 @@ const portfolioData = [
       "Created Gamp bot to help discover locations based on your personality throug a series of questions",
     ],
     deploy: null,
+    github: "https://github.com/Terence-A/Atlantic-Glamping",
   },
   {
-    id: 2,
+    id: 1,
     title: "Fact-V-Tech-Lounge",
     image: factVImg,
     description:
@@ -48,6 +52,41 @@ const portfolioData = [
       "Coudinary",
       "Helped varioius parts of back-end",
     ],
+    deploy: null,
+    github: "https://github.com/Terence-A/fact-v-tech-lounge",
+  },
+  {
+    id: 2,
+    title: "Whats for Dinner",
+    image: dinnerImg,
+    description:
+      "Introducing What's for Dinner – your go-to kitchen companion for effortless meal planning and creative cooking using ingredients already in your pantry. Say goodbye to mealtime indecision and hello to a world of delicious possibilities right at your fingertips.",
+    tools: ["HTML", "CSS", "JavaScript", "Bootstrap", "API", "Figma"],
+    role: ["Mock-up using Figma", "Vegan portion with API's", "Front-end"],
+    deploy: "https://terence-a.github.io/WhatsForDinner/index.html",
+    github: "https://github.com/Terence-A/WhatsForDinner",
+  },
+  {
+    id: 3,
+    title: "Weather Dashboard",
+    image: weatherImg,
+    description:
+      "Introducing Weather Dashboard, the essential tool for travelers seeking a comprehensive 5-day weather forecast for their destination city. With Weather Dashboard, you can effortlessly plan your trip with confidence, knowing what weather conditions to expect throughout your stay. Say goodbye to uncertainty and hello to seamless travel planning with Weather Dashboard.",
+    tools: ["HTML", "CSS", "Bootstrap", "Day.js Library", "Openweathermap API"],
+    role: ["Sole Developer"],
+    deploy: "https://terence-a.github.io/WeatherDashboard/",
+    github: "https://github.com/Terence-A/WeatherDashboard",
+  },
+  {
+    id: 4,
+    title: "Work Day Scheduler",
+    image: workImg,
+    description:
+      "Introducing the Work Day Scheduler app: your go-to tool for organizing daily tasks. With time blocks, local storage saving, and a display of the current day and working hours (9 AM - 5 PM), stay on top of your schedule effortlessly.",
+    tools: ["HTML", "CSS", "Bootstrap", "Day.js Library", "Jquery"],
+    role: ["Sole Developer"],
+    deploy: "https://terence-a.github.io/workDayScheduler/",
+    github: "https://github.com/Terence-A/workDayScheduler",
   },
 ];
 

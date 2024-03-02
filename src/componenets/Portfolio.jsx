@@ -3,6 +3,7 @@ import portfolioData from "../portfolioData";
 
 const Portfolio = () => {
   const [selected, setSelected] = useState("description");
+  const [portfolioIndex, setPortfolioIndex] = useState(0);
 
   const btnCss =
     "text-stone-400 text-xl font-bold hover:text-amber-600 hover:underline hover:underline-amber-600";
@@ -13,6 +14,10 @@ const Portfolio = () => {
     setSelected(listSelection);
   };
 
+  const handlePorfolioIndex = (portIndex) => {
+    setPortfolioIndex(portIndex);
+  };
+
   return (
     <section id="portfolio" className="pt-24 px-20">
       <h1 className="text-stone-50 text-5xl  font-bold mb-12">Portfolio</h1>
@@ -21,20 +26,17 @@ const Portfolio = () => {
           <div className="rounded-md ">
             <img
               className="w-[700px] h-[500px]  rounded-2xl"
-              src={portfolioData[0].image}
+              src={portfolioData[portfolioIndex].image}
               alt="image"
             />
           </div>
           <div className="w-[500px] flex flex-col mt-8 ">
             <div className="flex items-center ">
               <h1 className="text-stone-50 text-4xl font-bold  mr-20">
-                {portfolioData[0].title}
+                {portfolioData[portfolioIndex].title}
               </h1>
-              <a
-                href="https://github.com/Terence-A/Atlantic-Glamping"
-                target="blank"
-              >
-                <button className="bg-amber-700 text-stone-50 p-2 rounded-md animate-bounce hover:bg-amber-800">
+              <a href={portfolioData[portfolioIndex].deploy} target="blank">
+                <button className="z-auto bg-amber-700 text-stone-50 p-2 rounded-md animate-bounce hover:bg-amber-800">
                   Deploy
                 </button>
               </a>
@@ -70,19 +72,19 @@ const Portfolio = () => {
               </ul>
               {selected === "description" && (
                 <p className="text-stone-400 text-lg">
-                  {portfolioData[0].description}
+                  {portfolioData[portfolioIndex].description}
                 </p>
               )}
               {selected === "tools" && (
                 <ul className="text-stone-400 text-lg list-disc ml-4 ">
-                  {portfolioData[0].tools.map((tool, index) => (
+                  {portfolioData[portfolioIndex].tools.map((tool, index) => (
                     <li key={index}>{tool}</li>
                   ))}
                 </ul>
               )}
               {selected === "role" && (
                 <ul className="text-stone-400 text-lg list-disc ml-4">
-                  {portfolioData[0].role.map((role, index) => (
+                  {portfolioData[portfolioIndex].role.map((role, index) => (
                     <li key={index}>{role}</li>
                   ))}
                 </ul>
@@ -93,7 +95,10 @@ const Portfolio = () => {
         <ul className="flex flex-wrap justify-center gap-4">
           {portfolioData.map((title, index) => (
             <li key={index}>
-              <button className="border border-amber-700 w-48 py-4 text-lg font-bold text-amber-700 rounded-lg  hover:bg-amber-700 hover:text-stone-50">
+              <button
+                className="bg-stone-800 border border-amber-700 w-48 py-4 text-lg font-bold text-amber-700 rounded-lg  hover:bg-amber-700 hover:text-stone-50"
+                onClick={() => handlePorfolioIndex(title.id)}
+              >
                 {title.title}
               </button>
             </li>
