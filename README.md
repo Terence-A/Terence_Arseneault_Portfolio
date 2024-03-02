@@ -28,6 +28,8 @@ Thanks for being part of this exciting journey!
 
 ![alt text](image-2.png)
 
+![image](https://github.com/Terence-A/Terence_Arseneault_Portfolio/assets/90189211/2827846f-f56f-402c-81af-51bfdffc7cff)
+
 ![alt text](image-1.png)
 
 ## Contact Me
