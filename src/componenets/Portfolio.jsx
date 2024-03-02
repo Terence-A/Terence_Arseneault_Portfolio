@@ -10,6 +10,12 @@ const Portfolio = () => {
   const btnSelectedCss =
     "text-amber-600 text-xl font-bold hover:text-amber-600 underline ";
 
+  const portFolioBtn =
+    "bg-stone-800 border border-amber-700 w-48 py-4 text-lg font-bold text-amber-700 rounded-lg  hover:bg-amber-700 hover:text-stone-50";
+
+  const portFolioBtnSelected =
+    "bg-amber-700 border border-amber-700 w-48 py-4 text-lg font-bold text-stone-50 rounded-lg  hover:bg-amber-600 hover:text-stone-50";
+
   const handleSelect = (listSelection) => {
     setSelected(listSelection);
   };
@@ -36,7 +42,7 @@ const Portfolio = () => {
                 {portfolioData[portfolioIndex].title}
               </h1>
               <a href={portfolioData[portfolioIndex].deploy} target="blank">
-                <button className="z-auto bg-amber-700 text-stone-50 p-2 rounded-md animate-bounce hover:bg-amber-800">
+                <button className="bg-amber-700 text-stone-50 p-2 rounded-md animate-bounce hover:bg-amber-800">
                   Deploy
                 </button>
               </a>
@@ -96,7 +102,11 @@ const Portfolio = () => {
           {portfolioData.map((title, index) => (
             <li key={index}>
               <button
-                className="bg-stone-800 border border-amber-700 w-48 py-4 text-lg font-bold text-amber-700 rounded-lg  hover:bg-amber-700 hover:text-stone-50"
+                className={
+                  title.id === portfolioIndex
+                    ? portFolioBtnSelected
+                    : portFolioBtn
+                }
                 onClick={() => handlePorfolioIndex(title.id)}
               >
                 {title.title}
