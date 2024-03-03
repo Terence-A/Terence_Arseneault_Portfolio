@@ -2,10 +2,15 @@ import skillsData from "../skillsData";
 
 const About = () => {
   return (
-    <section className="px-20 py-20 flex flex-col bg-stone-800 " id="about">
-      <h1 className="text-stone-50 text-5xl my-12 font-bold ">About</h1>
-      <div className="px-36">
-        <p className="text-stone-200 text-xl mb-4  tracking-wider">
+    <section
+      className="px-2 lg:px-20 py-8 lg:py-20 flex flex-col bg-stone-800 "
+      id="about"
+    >
+      <h1 className="text-stone-50 text-3xl lg:text-5xl my-12 font-bold ">
+        About
+      </h1>
+      <div className="px-4 lg:px-36">
+        <p className="text-stone-200 lg:text-xl mb-4  tracking-wider">
           I am a dedicated coding enthusiast with a transformative journey from
           a captivating hobby to a thriving career. My educational path led me
           through The University of New Brunswick's Full Stack Coding Bootcamp,
@@ -20,7 +25,7 @@ const About = () => {
           languages or exploring fresh frameworks, is my constant pursuit,
           fueling my growth and passion for this dynamic field.
         </p>
-        <p className="text-stone-200 text-xl mb-20  tracking-wider ">
+        <p className="text-stone-200 text-xl mb-12 lg:mb-20  tracking-wider ">
           Beyond coding, I am a creative at heart. I immerse myself in 3D art
           using Blender, crafting captivating models and animations. Music is
           another passion, as I enjoy playing and recording, rounding out my
@@ -30,13 +35,13 @@ const About = () => {
         </p>
       </div>
       <div>
-        <h2 className="text-stone-50 text-5xl font-semiBold text-center mt-8 ">
+        <h2 className="text-stone-50 text-3xl md:text-5xl font-semiBold text-center mt-2 md:mt-8 ">
           My Skills
         </h2>
-        <div className="flex justify-center flex-wrap  gap-4 my-20 mx-12 ">
+        <div className="flex justify-center flex-wrap  gap-4 my-8 md:my-20  md:mx-12 ">
           {skillsData.map((skill) => (
             <div key={skill.id}>
-              <div className="bg-stone-900 shadow-md shadow-stone-900 size-56 p-8 flex flex-col justify-between items-center rounded-lg space-y-8">
+              <div className="bg-stone-900 shadow-md shadow-stone-900 size-40 md:size-56 p-4 md:p-8 flex flex-col justify-between items-center rounded-lg space-y-8">
                 <p>
                   <img
                     className="size-20 rounded-lg"
