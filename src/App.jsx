@@ -9,12 +9,12 @@ function App() {
   return (
     <>
       <Header />
-      {/* <main className="bg-stone-900 h-full">
+      <main className="bg-stone-900 h-full">
         <Hero />
         <About />
         <Portfolio />
         <Contact />
-      </main> */}
+      </main>
       <Footer />
     </>
   );

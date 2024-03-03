@@ -26,7 +26,7 @@ const Hero = () => {
           repeat={Infinity}
         />
 
-        <div className="flex flex-wrap justify-center mt-8 md:mt-20 gap-8">
+        <div className="flex flex-wrap justify-center mt-4 md:mt-6 gap-4 mb-8">
           <a href="#contact">
             <button className="bg-amber-700 text-stone-50  xl:text-2xl rounded-full w-32 lg:w-48 py-4 hover:bg-amber-800 hover:font-bold">
               Contact Me
