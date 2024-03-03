@@ -25,7 +25,7 @@ const About = () => {
           languages or exploring fresh frameworks, is my constant pursuit,
           fueling my growth and passion for this dynamic field.
         </p>
-        <p className="text-stone-200 text-xl mb-12 lg:mb-20  tracking-wider ">
+        <p className="text-stone-200 lg:text-xl mb-12 lg:mb-20  tracking-wider ">
           Beyond coding, I am a creative at heart. I immerse myself in 3D art
           using Blender, crafting captivating models and animations. Music is
           another passion, as I enjoy playing and recording, rounding out my

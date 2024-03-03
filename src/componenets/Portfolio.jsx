@@ -38,7 +38,7 @@ const Portfolio = () => {
               alt="image"
             />
           </div>
-          <div className="w-[300px] lg:[500px] flex flex-col mt-8 ">
+          <div className="w-[300px] lg:w-[500px] flex flex-col mt-8 ">
             <div className="flex items-center ">
               <h1 className="text-stone-50 text-4xl font-bold  mr-20">
                 {portfolioData[portfolioIndex].title}
