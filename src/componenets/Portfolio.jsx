@@ -25,7 +25,7 @@ const Portfolio = () => {
   };
 
   return (
-    <section id="portfolio" className="pt-8 lg:pt-24 px-4 lg:px-20">
+    <section id="portfolio" className="pt-8 lg:pt-24 px-4 lg:px-36">
       <h1 className="text-stone-50 text-3xl lg:text-5xl  font-bold mb-8 lg:mb-12">
         Portfolio
       </h1>

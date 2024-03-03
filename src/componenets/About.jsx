@@ -49,7 +49,7 @@ const About = () => {
                     alt="javascript icon"
                   />
                 </p>
-                <p className="text-stone-50 text-xl text-center">
+                <p className="text-stone-50 text-sm md:text-xl text-center">
                   {skill.title}
                 </p>
               </div>
