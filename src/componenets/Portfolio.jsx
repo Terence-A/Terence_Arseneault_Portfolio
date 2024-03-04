@@ -25,20 +25,20 @@ const Portfolio = () => {
   };
 
   return (
-    <section id="portfolio" className="pt-8 lg:pt-24 px-4 lg:px-36">
-      <h1 className="text-stone-50 text-3xl lg:text-5xl  font-bold mb-8 lg:mb-12">
+    <section id="portfolio" className="pt-8 lg:pt-24 px-2 lg:px-20 ">
+      <h1 className="text-stone-50 text-3xl lg:text-5xl   font-bold mt-12 xl:mt-20 mb-8 lg:mb-12 border-b border-b-stone-50/30 pb-2">
         Portfolio
       </h1>
       <div className="pb-20">
-        <div className="flex-col flex xl:flex-row justify-between p-8  mb-8 gap-12">
-          <div className="rounded-md mb-12 ">
+        <div className="flex-col flex xl:flex-row items-center xl:items-start justify-between py-8 xl:px-36 mb-8 gap-12">
+          <div className="rounded-md mb-8 ">
             <img
-              className="w-96 lg:w-[600px] lg:h-[400px]  xl:w-[700px] xl:h-[500px]  xl:mr-14 rounded-2xl"
+              className="w-[500px] lg:w-[600px] lg:h-[400px]  xl:w-[700px] xl:h-[500px]  rounded-2xl"
               src={portfolioData[portfolioIndex].image}
               alt="image"
             />
           </div>
-          <div className="w-[300px] lg:w-[500px] flex flex-col mt-8 ">
+          <div className="w-[300px] lg:w-[600px] flex flex-col my-2 ">
             <div className="flex items-center ">
               <h1 className="text-stone-50 text-4xl font-bold  mr-20">
                 {portfolioData[portfolioIndex].title}
