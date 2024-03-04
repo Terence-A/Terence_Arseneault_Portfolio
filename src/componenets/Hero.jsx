@@ -2,7 +2,7 @@ import photoImg from "../assets/photo.png";
 import { TypeAnimation } from "react-type-animation";
 const Hero = () => {
   return (
-    <div className="flex flex-wrap xl:flex-nowrap justify-center md:justify-between items-center px-4 xl:px-36 py-12 md:py-36 shadow-lg shadow-stone-50  ">
+    <div className="flex flex-wrap xl:flex-nowrap justify-center md:justify-between items-center px-8 2xl:px-36 py-12 md:py-36 shadow-lg shadow-stone-50  ">
       <div className="flex flex-col ">
         <h1 className="text-stone-50 text-center text-3xl lg:text-4xl xl:text-6xl font-bold mb-4 xl:mb-8 tracking-wider">
           Full Stack Web Developer

@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     <header className="sticky top-0">
-      <nav className=" sticky top-0 bg-stone-950 shadow-md shadow-stone-50/10 px-12  py-4 flex justify-between  items-center">
+      <nav className=" sticky  top-0 bg-stone-950 shadow-md shadow-stone-50/10 px-12  py-4 flex justify-between  items-center">
         <a href="#">
           <h5 className="h5 text-stone-50 font-bold text-2xl sm:text-3xl xl:text-5xl  xl:w-96 cursor-pointer hover:text-stone-200">
             Terence Arseneault
@@ -40,9 +40,9 @@ const Header = () => {
             </a>
           </ul>
         </div>
-        ng
+
         <div className="hidden lg:flex">
-          <ul className="flex space-x-4 xl:w-96 justify-end ">
+          <ul className="flex space-x-4 xl:w-96 justify-end  ">
             <li>
               <a
                 href="https://www.linkedin.com/in/terence-arseneault/"
@@ -66,12 +66,11 @@ const Header = () => {
             </a>
           </ul>
         </div>
-        <button onClick={() => handleDropdown()}>
-          <img
-            className=" flex lg:hidden size-6 "
-            src={menuImg}
-            alt="hamburger menu icon"
-          />
+        <button
+          className=" flex lg:hidden size-6 "
+          onClick={() => handleDropdown()}
+        >
+          <img src={menuImg} alt="hamburger menu icon" />
         </button>
       </nav>
       {dropdownActive && (

@@ -6,10 +6,10 @@ const About = () => {
       className="px-2 lg:px-20 py-8 lg:py-20 flex flex-col bg-stone-800 "
       id="about"
     >
-      <h1 className="text-stone-50 text-3xl lg:text-5xl my-12 font-bold ">
+      <h1 className="text-stone-50 text-3xl lg:text-5xl my-12 font-bold border-b border-b-stone-50/30 pb-2">
         About
       </h1>
-      <div className="px-4 lg:px-36">
+      <div className="px-4 xl:px-36">
         <p className="text-stone-200 lg:text-xl mb-4  tracking-wider">
           I am a dedicated coding enthusiast with a transformative journey from
           a captivating hobby to a thriving career. My educational path led me
