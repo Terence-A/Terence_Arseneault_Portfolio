@@ -50,8 +50,12 @@ const Contact = () => {
           cols="30"
           rows="10"
           placeholder="Message"
-          className="w-full px-4 py-4 bg-stone-950 rounded-sm shadow-md shadow-stone-900 text-xl font-bold placeholder-stone-700 text-stone-50 outline-none"
+          className="w-full px-4 py-4 bg-stone-950 rounded-sm shadow-md shadow-stone-900 text-xl font-bold placeholder-stone-700 text-stone-50 outline-none "
         ></textarea>
+
+        <button className="w-full px-4 py-4 bg-stone-900/70 rounded-lg shadow-md shadow-stone-900 text-xl hover:font-bold placeholder-stone-700 text-amber-800 outline-none border border-amber-800 hover:text-stone-50 hover:bg-amber-800">
+          Submit
+        </button>
       </form>
     </section>
   );
