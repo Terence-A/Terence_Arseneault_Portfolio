@@ -30,8 +30,7 @@ Thanks for being part of this exciting journey!
 
 ![image](https://github.com/Terence-A/Terence_Arseneault_Portfolio/assets/90189211/2827846f-f56f-402c-81af-51bfdffc7cff)
 
-![image](https://github.com/Terence-A/Terence_Arseneault_Portfolio/assets/90189211/e1df2332-961b-47bd-b207-b589db196c2a)
-
+![alt text](image-3.png)
 
 ## Contact Me
 
