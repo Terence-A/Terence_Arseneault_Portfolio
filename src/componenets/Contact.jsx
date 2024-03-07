@@ -38,8 +38,8 @@ const Contact = () => {
         data-netlify="true"
         className="flex flex-col flex-wrap space-y-4 md:w-[600px] md:mx-auto mx-2"
       >
+        <input type="hidden" name="contactform" className="contactForm" />
         <div className="md:flex-row md:space-x-4 space-y-4 flex-col  ">
-          <input type="hidden" name="contactform" className="contactForm" />
           <input
             type="text"
             name="name"
