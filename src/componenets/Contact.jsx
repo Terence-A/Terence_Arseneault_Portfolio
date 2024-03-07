@@ -36,9 +36,10 @@ const Contact = () => {
         name="contact"
         method="POST"
         data-netlify="true"
+        onSubmit={handleSubmit}
         className="flex flex-col flex-wrap space-y-4 md:w-[600px] md:mx-auto mx-2"
       >
-        <input type="hidden" name="contactform" className="contactForm" />
+        <input type="hidden" name="form-name" className="contactForm" />
         <div className="md:flex-row md:space-x-4 space-y-4 flex-col  ">
           <input
             type="text"
@@ -71,7 +72,6 @@ const Contact = () => {
 
         <button
           type="submit"
-          onClick={handleSubmit}
           className="w-full px-4 py-4 bg-amber-700 rounded-lg shadow-md shadow-stone-900 text-xl hover:font-bold placeholder-stone-700 text-stone-200 outline-none  hover:text-stone-50 hover:bg-amber-600"
         >
           Submit
