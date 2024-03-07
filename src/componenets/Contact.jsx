@@ -3,6 +3,10 @@ import phoneImg from "../assets/icons/phone.png";
 import pinImg from "../assets/icons/pin.png";
 
 const Contact = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("clicked");
+  };
   return (
     <section className="bg-stone-800 py-20 lg:py-36" id="contact">
       {/* <h1 className="text-3xl lg:text-5xl text-stone-50 text-center mb-12">
@@ -28,32 +32,48 @@ const Contact = () => {
       <h1 className="text-3xl lg:text-5xl text-stone-50 text-center mb-12">
         Contact Me
       </h1>
-      <form className="flex flex-col flex-wrap space-y-4 md:w-[600px] md:mx-auto mx-2">
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        className="flex flex-col flex-wrap space-y-4 md:w-[600px] md:mx-auto mx-2"
+      >
         <div className="md:flex-row md:space-x-4 space-y-4 flex-col  ">
+          <input type="hidden" name="contactform" className="contactForm" />
           <input
             type="text"
+            name="name"
+            required
             placeholder="Name"
-            className="w-full md:w-[290px] px-4 py-4 bg-stone-950 rounded-sm shadow-md shadow-stone-900 text-xl font-bold placeholder-stone-400 text-stone-50 outline-none"
+            className="w-full md:w-[290px] px-4 py-4 bg-stone-950 rounded-sm shadow-md shadow-stone-900 font-bold placeholder-stone-400 text-stone-50 outline-none"
           />
           <input
-            type="text"
+            name="email"
+            type="email"
             placeholder="Email"
-            className="w-full md:w-[290px] px-4 py-4 bg-stone-950 rounded-sm shadow-md shadow-stone-900 text-xl font-bold placeholder-stone-400 text-stone-50 outline-none"
+            className="w-full md:w-[290px] px-4 py-4 bg-stone-950 rounded-sm shadow-md shadow-stone-900  font-bold placeholder-stone-400 text-stone-50 outline-none"
           />
         </div>
         <input
           type="text"
+          required
           placeholder="Subject"
-          className="w-full px-4 py-4 bg-stone-950 rounded-sm shadow-md shadow-stone-900 text-xl font-bold placeholder-stone-400 text-stone-50 outline-none"
+          className="w-full px-4 py-4 bg-stone-950 rounded-sm shadow-md shadow-stone-900  font-bold placeholder-stone-400 text-stone-50 outline-none"
         />
         <textarea
+          name="message"
           cols="30"
           rows="10"
+          required
           placeholder="Message"
-          className="w-full px-4 py-4 bg-stone-950 rounded-sm shadow-md shadow-stone-900 text-xl font-bold placeholder-stone-400 text-stone-50 outline-none  "
+          className="w-full px-4 py-4 bg-stone-950 rounded-sm shadow-md shadow-stone-900  font-bold placeholder-stone-400 text-stone-50 outline-none  "
         ></textarea>
 
-        <button className="w-full px-4 py-4 bg-amber-700 rounded-lg shadow-md shadow-stone-900 text-xl hover:font-bold placeholder-stone-700 text-stone-200 outline-none  hover:text-stone-50 hover:bg-amber-600">
+        <button
+          type="submit"
+          onClick={handleSubmit}
+          className="w-full px-4 py-4 bg-amber-700 rounded-lg shadow-md shadow-stone-900 text-xl hover:font-bold placeholder-stone-700 text-stone-200 outline-none  hover:text-stone-50 hover:bg-amber-600"
+        >
           Submit
         </button>
       </form>
